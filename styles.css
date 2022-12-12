@@ -15,6 +15,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Gotham', sans-serif;
 }
 
 /*Wave*/
@@ -36,7 +37,7 @@
     position: absolute;
     top: 140px;
     left: 0;
-    background-image: url(/images/ola-01.svg);
+    background-image: url(images/ola-01.svg);
     background-position: bottom;
     z-index: -1;
 }
@@ -160,17 +161,17 @@ filter: brightness(60%);
     align-self: end;
 }
 .inspirate{
-    background-image: url(/images/inspirate.svg);
+    background-image: url(images/inspirate.svg);
     background: cover;
 }
 
 .europa{
-    background-image: url(/images/europa.svg);
+    background-image: url(images/europa.svg);
     background: cover;
 }
 
 .organiza-tu-viaje{
-    background-image: url(/images/organiza-tu-viaje.svg);
+    background-image: url(images/organiza-tu-viaje.svg);
     background: cover;
 }
 
@@ -218,4 +219,3 @@ footer{
 .copy{
     color: white;
 }
-

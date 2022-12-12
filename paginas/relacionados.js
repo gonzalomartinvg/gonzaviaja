@@ -23,20 +23,20 @@ const brasil = {
         }
     ],
 
+    "parati":[
+        {
+            "nombre": "Parati (BRA)",
+
+            "url": "parati.html",
+        }
+    ],
+
     "arraial-do-cabo":[
         {
             "nombre": "Arraial (BRA)",
 
             "url": "rio-de-janeiro.html",
 
-        }
-    ],
-
-    "Paraty":[
-        {
-            "nombre": "Paraty (BRA)",
-
-            "url": "https://es.wikipedia.org/wiki/Paraty",
         }
     ],
 

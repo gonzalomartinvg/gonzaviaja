@@ -31,6 +31,10 @@
     z-index: -1;
 }
 
+.wave-contenedor{
+    width: 100%;
+}
+
 .wave{
     width: 600%; /*ESTO ES IMPORTANTÍSIMO, le decimos que el widht sea mas grande y esto le da continuidad a la animación. Si se ve cortada la animación, hay que subir esto*/
     height: 20%; /*Con esto lo hacemos más alto o menos alto a la parte de la ola*/
@@ -212,7 +216,7 @@ footer{
     justify-items: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 1;
 
 }
 

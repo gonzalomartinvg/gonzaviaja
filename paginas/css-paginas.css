@@ -1,0 +1,206 @@
+:root{
+    --primary-color: #0673c6;
+    --primary-color-light: #1993e5;
+    --primary-color-hard: #004695;
+    --secondary-color: #c65906;
+    --secondary-color-light: #e7b452;
+    --accent-color: #ef007e;
+    --blanco-1: #ffff;
+    --blanco-2: #f8f5f5;
+    --gris-1: #e6e3e3;
+    --gris-2: #3f3f3f;
+}
+
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+/*HEADER*/
+
+.header{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+h1{
+    width: 90%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+/*TEXTO*/
+
+h2{
+    color: #3f3f3f;;
+    margin-bottom: 1.5rem;
+}
+
+.section-texto{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+}
+
+.parrafo{
+    color: #3f3f3f;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-style: bold;
+}
+
+.imagen-texto{
+    width: 115%;
+    max-width: 40rem;
+    min-width: 10rem;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.bajada-imagen{
+   justify-self: center;
+   margin-top: 0.5rem;
+   font-size: 0.9rem;
+   margin-bottom: 1.5rem;
+}
+
+.videos{
+    width: 560px;
+    height: 315px;
+    justify-self: center;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .videos{
+        width: 330px;
+        height: 115px;
+    }
+  }
+
+/*LOS DE ABAJO SON BOTONES SOLO PARA LAS PÁGINAS DE BRASIL QUE CONTIENE LA HISTORIA DE ILHA GRANDE, RÍO Y ETC.*/
+
+.botones-brasil{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.boton-brasil{
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.boton-brasil:hover{
+    background-color: var(--primary-color-hard);
+}
+
+
+/*RELACIONADOS*/
+
+.section-relacionados{
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor-relacionados{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(Auto-fill, minmax(12rem, 1fr));
+}
+
+.caja-relacionados{
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: white;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.caja-relacionados:hover{
+    background-color: var(--primary-color-hard);
+}
+
+/*BOTÓN INSTAGRAM (todavía no está implementado en las páginas*/
+
+.contenedor-boton-insta{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+}
+
+.boton-insta{
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.boton-insta:hover{
+    background-color: var(--primary-color-hard);
+    transform: rotate(-2deg);
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1;
+
+}
+
+.copy{
+    color: white;
+}
+
+

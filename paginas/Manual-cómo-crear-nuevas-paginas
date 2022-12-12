@@ -1,0 +1,23 @@
+Manual como crear nuevas páginas:
+
+Metas:
+
+1) Completar el meta data NAME y su descripción. Debe poseer palabras claves y simular posibles búsquedas de las personas.
+2) Completar el meta data TITLE también teniendo en cuenta las palabras claves.
+
+Cuerpo:
+
+3) Cambiar imagen de encabezado, nombre, imágenes y textos. /Para el estilo, se puede utilizar las clases "italic" y "bold" ya establecidas para ganar celeridad./
+
+Dataset relacionados:
+
+4) Cambiar los dataset de indicador de país e indicador de destino, es clave para que javascript pueda relacionar.
+
+Modificar javascript
+
+5) Agregar al bjeto del país el indicador del destino. En caso de ser un nuevo país, hay que generar una propiedad con el nombre del país y luego agregar el destino.
+
+
+Aclaraciones:
+
+-Cada página tiene varias secciones guardadas para elementos autogenerados. Esto sirve para en un futuro poder modificar todas las páginas al mismo tiempo desde javascript (modificar-todas-las-paginas.js).

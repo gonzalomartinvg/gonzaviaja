@@ -1,0 +1,221 @@
+:root{
+    --primary-color: #0673c6;
+    --primary-color-light: #1993e5;
+    --primary-color-hard: #004695;
+    --secondary-color: #c65906;
+    --secondary-color-light: #e7b452;
+    --accent-color: #ef007e;
+    --blanco-1: #ffff;
+    --blanco-2: #f8f5f5;
+    --gris-1: #e6e3e3;
+    --gris-2: #3f3f3f;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Wave*/
+
+/*La clave para que funcione el bucle es que la imagen en svg. debe empezar de una manera y terminar de una manera similar permitiendo enganchar el principio y fin de la misma imagen. Si no, queda extraño.*/
+
+.background-color{
+    width: 100%;
+    height: 30%; /*Con esto lo hacemos más alto o menos alto.*/
+    background: var(--primary-color);
+    position: absolute; /*Toma como referencia el body porque no hay ningún contenedor relative antes*/
+    top: 0; /*Le indicamos que se mantenga arriba de todo*/
+    z-index: -1;
+}
+
+.wave{
+    width: 600%; /*ESTO ES IMPORTANTÍSIMO, le decimos que el widht sea mas grande y esto le da continuidad a la animación. Si se ve cortada la animación, hay que subir esto*/
+    height: 20%; /*Con esto lo hacemos más alto o menos alto a la parte de la ola*/
+    position: absolute;
+    top: 140px;
+    left: 0;
+    background-image: url(/images/ola-01.svg);
+    background-position: bottom;
+    z-index: -1;
+}
+
+.wave-1{
+    animation: wave-1 10s linear infinite; /*Le indicamos una animación, dsp un nombre, duración, que sea lineal (que se una ciclo siempre igual) y que sea infinita (que se repoduzca siempre el ciclo*/
+}
+
+@keyframes wave-1{ /*Funciona como en premiere*/
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+
+}
+
+.wave-2{
+    animation: wave-2 10s linear infinite, desplazamiento 7s ease infinite; /*Le indicamos una animación, dsp un nombre, duración, que sea lineal (que se una ciclo siempre igual) y que sea infinita (que se repoduzca siempre el ciclo*/
+    opacity: 0.5;
+}
+
+@keyframes wave-2{ /*Funciona como en premiere*/
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+
+}
+
+@keyframes desplazamiento{ /*Funciona como en premiere*/
+    0%, 100%{
+        transform: translateY(-25px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+
+}
+
+/*Bloques Generales*/
+
+.bloques{
+    width: 90%;
+    min-height: 14rem;
+    gap: 1rem;
+    column-gap: 6rem; 
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+/*Contenedores Generales*/
+
+.contenedores{ /*Reemplazar clase por la del archivo correspondiente*/
+
+    background-color: var(--blanco-1);
+    width: 100%;
+    max-width: 43rem; 
+    height: 14rem; 
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgb(99, 99, 99);
+
+}
+
+/*Presentación*/
+
+.presentacion{
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.presentacion h1{
+    font-family: 'Gotham black', sans-serif;
+    color: var(--blanco-1);
+    margin-bottom: 1rem;
+}
+
+.presentacion p{
+    font-family: 'Gotham', sans-serif;
+    color: var(--blanco-1);
+    line-height: 1.5rem;
+}
+
+/*Botones*/
+
+.animacion-contenedores{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.animacion-contenedores :hover{
+transform: rotate(-2deg);
+filter: brightness(60%);
+}
+
+.contenedor-1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.titulo-botones{
+    font-family: 'Gotham black', sans-serif;
+    font-size: 1.5rem;
+    color: var(--blanco-1);
+}
+
+.texto-botones{
+    font-family: 'Gotham black', sans-serif;
+    color: var(--blanco-1);
+    align-self: end;
+}
+.inspirate{
+    background-image: url(/images/inspirate.svg);
+    background: cover;
+}
+
+.europa{
+    background-image: url(/images/europa.svg);
+    background: cover;
+}
+
+.organiza-tu-viaje{
+    background-image: url(/images/organiza-tu-viaje.svg);
+    background: cover;
+}
+
+/*BOTÓN INSTAGRAM*/
+
+.contenedor-boton-insta{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+}
+
+.boton-insta{
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.boton-insta:hover{
+    background-color: var(--primary-color-hard);
+    transform: rotate(-2deg);
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.copy{
+    color: white;
+}
+

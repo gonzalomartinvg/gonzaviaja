@@ -15,8 +15,7 @@ Dataset relacionados:
 
 Modificar javascript
 
-5) Agregar al bjeto del país el indicador del destino. En caso de ser un nuevo país, hay que generar una propiedad con el nombre del país y luego agregar el destino.
-
+5) Agregar al objeto del país una prop con el nombre del destino. En caso de ser un nuevo país, hay que generar un objeto con el nombre del país y luego agregar los destinos.
 
 Aclaraciones:
 

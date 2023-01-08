@@ -46,20 +46,21 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
 }
 
-.contenedor-continente{
+.button-continente{
     height: 2rem;
     border-radius: 10px;
     background-color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
     color: var(--blanco-1);
+    border: none;
 
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
-.contenedor-continente:hover{
+.button-continente:hover{
     background-color: var(--primary-color-hard);
 }
 
@@ -72,8 +73,14 @@ header{
     display: grid;
     grid-gap: 1rem;
 
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 
+}
+
+@media (max-width: 600px) {
+    .bloque-autogenerador{
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    }
 }
 
 .contenedor-autogenerado{
@@ -87,7 +94,7 @@ header{
 }
 
 .bandera{
-    width: 6rem;
+    width: 5rem;
     justify-self: start;
 }
 
@@ -106,7 +113,7 @@ header{
 }
 
 .contenedor-autogenerado:hover .bandera{
-    width: 7rem;
+    width: 6rem;
     transform: rotate(2deg);
 }
 
@@ -120,3 +127,12 @@ header{
     transform: rotate(2deg);
 }
 
+/*Continentes deshabilitads por que no los visité todavía*/
+
+.africa{
+    display: none;
+}
+
+.oceania{
+    display: none;
+}

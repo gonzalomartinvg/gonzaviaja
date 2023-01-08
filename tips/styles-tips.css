@@ -1,0 +1,122 @@
+:root{
+    --primary-color: #0673c6;
+    --primary-color-light: #1993e5;
+    --primary-color-hard: #004695;
+    --secondary-color: #c65906;
+    --secondary-color-light: #e7b452;
+    --accent-color: #ef007e;
+    --blanco-1: #ffff;
+    --blanco-2: #f8f5f5;
+    --gris-1: #e6e3e3;
+    --gris-2: #3f3f3f;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+/*Header*/
+
+header{
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+    color: var(--gris-2);
+}
+
+/*Subtitulo*/
+
+.subtitulo{
+    width: 90%;
+    margin: auto;
+    color: var(--gris-2);
+}
+
+/*Botones continentes*/
+
+.bloque-continente{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+}
+
+.contenedor-continente{
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--blanco-1);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedor-continente:hover{
+    background-color: var(--primary-color-hard);
+}
+
+/*Botones países*/
+
+.bloque-autogenerador{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+
+}
+
+.contenedor-autogenerado{
+    height: 15rem;
+    background-size: cover;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 1rem;
+
+    display: grid;
+}
+
+.bandera{
+    width: 6rem;
+    justify-self: start;
+}
+
+.nombre-pais{
+    font-size: 2rem;
+    color: var(--blanco-1);
+    font-weight: 700;
+    justify-self: center;
+}
+
+.barra-pais{
+    width: 4rem;
+    height: 0.2rem;
+    background-color: var(--accent-color);
+    justify-self: center;
+}
+
+.contenedor-autogenerado:hover .bandera{
+    width: 7rem;
+    transform: rotate(2deg);
+}
+
+.contenedor-autogenerado:hover .nombre-pais{
+    font-size: 2.5rem;
+    transform: rotate(2deg);
+}
+
+.contenedor-autogenerado:hover .barra-pais{
+    width: 6rem;
+    transform: rotate(2deg);
+}
+

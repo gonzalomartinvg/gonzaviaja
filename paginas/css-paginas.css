@@ -18,36 +18,101 @@
     font-family: 'Gotham', sans-serif;
 }
 
-a{
-    text-decoration: none;
-}
 
 /*HEADER*/
 
 .header{
     width: 100%;
+    height: 12rem;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--blanco-1);;
     display: grid;
     justify-items: center;
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin-bottom: 2rem;
+
 }
+
+@media (max-width: 600px) {
+    .header{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+  }
 
 h1{
     width: 90%;
     margin: auto;
-    color: white;
+    color: var(--blanco-1);;
     text-align: center;
+    
+}
+
+/*MENÚ*/
+
+.contenedor-menu{
+    width: 100%;
+    margin: auto;
+    padding: 1.5rem;
+    display: grid;
+
+    position: fixed;
+    top: 1rem;
+}
+
+.menu{
+    justify-self: end;
+}
+
+@media (max-width: 600px) {
+    .menu{
+        justify-self: center;
+    }
+  }
+
+.elemento-menu{
+    font-size: 2rem;
+    background-color: var(--blanco-1);;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--blanco-2);
+    align-self: center;
+
+    transition-property: color, border, background-color;
+    transition-duration: 60ms;
+    transition-delay: 60ms;
+    
+}
+
+.elemento-menu:hover{
+    background-color: rgb(236, 234, 234);
+    border: solid var(--primary-color-hard);
+    color: var(--primary-color-hard);
+
+    transition-property: color, border, background-color;
+    transition-duration: 60ms;
+    transition-delay: 60ms;
 }
 
 /*TEXTO*/
 
+.contenedor-texto-relacionados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 h2{
-    color: #3f3f3f;;
+    color: var(--gris-2);
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    color: var(--gris-2);
     margin-bottom: 1.5rem;
 }
 
@@ -59,7 +124,7 @@ h2{
 }
 
 .parrafo{
-    color: #3f3f3f;
+    color: var(--gris-2);
     text-align: justify;
     margin-bottom: 1.5rem;
 }
@@ -71,6 +136,15 @@ h2{
 .bold{
     font-weight: 700;
 
+}
+
+.hipervinculo{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hipervinculo:hover{
+    text-decoration-line: underline;
 }
 
 .imagen-texto{ /*Son las imágenes de los textos*/
@@ -96,6 +170,12 @@ h2{
    margin-bottom: 1.5rem;
    text-align: center;
 }
+
+@media (max-width: 600px) {
+    .bajada-imagen{
+        width: 90%;
+    }
+  }
 
 .videos{
     width: 560px;
@@ -128,7 +208,7 @@ h2{
     border-radius: 10px;
     padding: 0.5rem;
     text-decoration: none;
-    color: white;
+    color: var(--blanco-1);;
     display: flex;
     grid-gap: 1rem;
     margin-bottom: 2rem;
@@ -144,6 +224,7 @@ h2{
 .section-relacionados{
     width: 90%;
     margin: auto;
+    margin-top: 1.5rem;
 }
 
 .contenedor-relacionados{
@@ -161,7 +242,7 @@ h2{
     border-radius: 10px;
     background-color: var(--primary-color);
     text-decoration: none;
-    color: white;
+    color: var(--blanco-1);;
 
     display: grid;
     justify-items: center;
@@ -188,7 +269,7 @@ h2{
     border-radius: 10px;
     padding: 0.5rem;
     text-decoration: none;
-    color: white;
+    color: var(--blanco-1);;
     font-size: 2rem;
 }
 
@@ -214,7 +295,7 @@ footer{
 }
 
 .copy{
-    color: white;
+    color: var(--blanco-1);;
 }
 
 

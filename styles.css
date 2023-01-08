@@ -99,7 +99,7 @@
 
 /*Contenedores Generales*/
 
-.contenedores{ /*Reemplazar clase por la del archivo correspondiente*/
+.contenedores{
 
     background-color: var(--blanco-1);
     width: 100%;
@@ -223,3 +223,6 @@ footer{
 .copy{
     color: white;
 }
+
+/*TIPS*/
+
